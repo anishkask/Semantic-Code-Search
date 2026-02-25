@@ -1,0 +1,7 @@
+# Semantic Code Search backend - pinned for Railway deployment
+fastapi==0.133.0
+uvicorn[standard]==0.41.0
+python-dotenv==1.2.1
+chromadb==1.5.1
+sentence-transformers==5.2.3
+openai==2.21.0

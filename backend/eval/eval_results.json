@@ -1,0 +1,232 @@
+{
+  "flask_local": {
+    "n_queries": 20,
+    "recall": {
+      "1": 0.55,
+      "3": 0.65,
+      "5": 0.7
+    },
+    "per_query": {
+      "how does Flask handle routing": {
+        "1": true,
+        "3": true,
+        "5": true
+      },
+      "where is the request context created": {
+        "1": true,
+        "3": true,
+        "5": true
+      },
+      "how are blueprints registered": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "where does Flask handle errors and exceptions": {
+        "1": false,
+        "3": true,
+        "5": true
+      },
+      "how does Flask initialize the application": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "how does Flask render templates": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "how is Flask configuration loaded": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "how does Flask handle sessions": {
+        "1": true,
+        "3": true,
+        "5": true
+      },
+      "how does Flask testing work": {
+        "1": true,
+        "3": true,
+        "5": true
+      },
+      "how does Flask WSGI middleware work": {
+        "1": false,
+        "3": false,
+        "5": true
+      },
+      "how does url_for build URLs": {
+        "1": true,
+        "3": true,
+        "5": true
+      },
+      "how does Flask match URL rules": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "how does Flask handle before_request and after_request": {
+        "1": false,
+        "3": true,
+        "5": true
+      },
+      "how does Flask create the Jinja environment": {
+        "1": true,
+        "3": true,
+        "5": true
+      },
+      "how does Flask handle flash messages": {
+        "1": true,
+        "3": true,
+        "5": true
+      },
+      "how does Flask handle redirects": {
+        "1": true,
+        "3": true,
+        "5": true
+      },
+      "how does Flask handle application context": {
+        "1": true,
+        "3": true,
+        "5": true
+      },
+      "how does Flask dispatch requests": {
+        "1": true,
+        "3": true,
+        "5": true
+      },
+      "how does Flask register error handlers": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "how does Flask send static files": {
+        "1": true,
+        "3": true,
+        "5": true
+      }
+    },
+    "k_values": [
+      1,
+      3,
+      5
+    ]
+  },
+  "flask_openai": {
+    "n_queries": 20,
+    "recall": {
+      "1": 0.2,
+      "3": 0.4,
+      "5": 0.5
+    },
+    "per_query": {
+      "how does Flask handle routing": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "where is the request context created": {
+        "1": false,
+        "3": true,
+        "5": true
+      },
+      "how are blueprints registered": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "where does Flask handle errors and exceptions": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "how does Flask initialize the application": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "how does Flask render templates": {
+        "1": false,
+        "3": false,
+        "5": true
+      },
+      "how is Flask configuration loaded": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "how does Flask handle sessions": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "how does Flask testing work": {
+        "1": true,
+        "3": true,
+        "5": true
+      },
+      "how does Flask WSGI middleware work": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "how does url_for build URLs": {
+        "1": false,
+        "3": true,
+        "5": true
+      },
+      "how does Flask match URL rules": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "how does Flask handle before_request and after_request": {
+        "1": false,
+        "3": false,
+        "5": true
+      },
+      "how does Flask create the Jinja environment": {
+        "1": true,
+        "3": true,
+        "5": true
+      },
+      "how does Flask handle flash messages": {
+        "1": true,
+        "3": true,
+        "5": true
+      },
+      "how does Flask handle redirects": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "how does Flask handle application context": {
+        "1": true,
+        "3": true,
+        "5": true
+      },
+      "how does Flask dispatch requests": {
+        "1": false,
+        "3": true,
+        "5": true
+      },
+      "how does Flask register error handlers": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "how does Flask send static files": {
+        "1": false,
+        "3": true,
+        "5": true
+      }
+    },
+    "k_values": [
+      1,
+      3,
+      5
+    ]
+  }
+}

@@ -1,0 +1,182 @@
+[
+  {
+    "query": "how does Flask handle routing",
+    "acceptable_ids": [
+      "app.py::Flask.url_for:966",
+      "sansio/app.py::App.add_url_rule:604",
+      "sansio/scaffold.py::Scaffold.add_url_rule:367",
+      "sansio/scaffold.py::Scaffold.route:335"
+    ],
+    "notes": "routing is defined in add_url_rule, route decorator, and url_for"
+  },
+  {
+    "query": "where is the request context created",
+    "acceptable_ids": [
+      "app.py::Flask.request_context:1369",
+      "ctx.py::RequestContext.__init__:309",
+      "ctx.py::RequestContext.push:367"
+    ],
+    "notes": "request_context creates RequestContext; push activates it"
+  },
+  {
+    "query": "how are blueprints registered",
+    "acceptable_ids": [
+      "sansio/app.py::App.register_blueprint:569",
+      "sansio/blueprints.py::Blueprint.register:273",
+      "sansio/blueprints.py::Blueprint.record:223"
+    ],
+    "notes": "register_blueprint on App; Blueprint.register and record"
+  },
+  {
+    "query": "where does Flask handle errors and exceptions",
+    "acceptable_ids": [
+      "app.py::Flask.handle_exception:774",
+      "app.py::Flask.handle_user_exception:742",
+      "app.py::Flask.handle_http_exception:707",
+      "helpers.py::abort:254"
+    ],
+    "notes": "handle_exception, handle_user_exception, handle_http_exception; abort helper"
+  },
+  {
+    "query": "how does Flask initialize the application",
+    "acceptable_ids": [
+      "app.py::Flask.__init__:218",
+      "sansio/app.py::App.__init__:282"
+    ],
+    "notes": "Flask and App __init__ constructors"
+  },
+  {
+    "query": "how does Flask render templates",
+    "acceptable_ids": [
+      "templating.py::render_template:138",
+      "templating.py::render_template_string:153",
+      "app.py::Flask.create_jinja_environment:361"
+    ],
+    "notes": "render_template, render_template_string; create_jinja_environment"
+  },
+  {
+    "query": "how is Flask configuration loaded",
+    "acceptable_ids": [
+      "config.py::Config.__init__:94",
+      "config.py::Config.from_pyfile:190",
+      "config.py::Config.from_object:221",
+      "config.py::Config.from_envvar:102"
+    ],
+    "notes": "Config class and from_pyfile, from_object, from_envvar"
+  },
+  {
+    "query": "how does Flask handle sessions",
+    "acceptable_ids": [
+      "sessions.py::SessionInterface:112",
+      "sessions.py::SecureCookieSessionInterface:288",
+      "sessions.py::SessionInterface.open_session:253",
+      "sessions.py::SessionInterface.save_session:267"
+    ],
+    "notes": "SessionInterface, SecureCookieSessionInterface; open_session, save_session"
+  },
+  {
+    "query": "how does Flask testing work",
+    "acceptable_ids": [
+      "app.py::Flask.test_client:632",
+      "testing.py::FlaskClient:109",
+      "testing.py::EnvironBuilder:26"
+    ],
+    "notes": "test_client, FlaskClient, EnvironBuilder"
+  },
+  {
+    "query": "how does Flask WSGI middleware work",
+    "acceptable_ids": [
+      "app.py::Flask.wsgi_app:1441",
+      "app.py::Flask.preprocess_request:1233",
+      "app.py::Flask.process_response:1260"
+    ],
+    "notes": "wsgi_app is the WSGI callable; preprocess_request, process_response"
+  },
+  {
+    "query": "how does url_for build URLs",
+    "acceptable_ids": [
+      "app.py::Flask.url_for:966",
+      "helpers.py::url_for:176"
+    ],
+    "notes": "Flask.url_for and helpers.url_for"
+  },
+  {
+    "query": "how does Flask match URL rules",
+    "acceptable_ids": [
+      "ctx.py::RequestContext.match_request:357",
+      "sansio/app.py::App.add_url_rule:604"
+    ],
+    "notes": "match_request does URL matching; add_url_rule registers rules"
+  },
+  {
+    "query": "how does Flask handle before_request and after_request",
+    "acceptable_ids": [
+      "app.py::Flask.preprocess_request:1233",
+      "app.py::Flask.process_response:1260",
+      "sansio/scaffold.py::Scaffold.before_request:459",
+      "sansio/scaffold.py::Scaffold.after_request:486"
+    ],
+    "notes": "preprocess_request/process_response; Scaffold before_request/after_request"
+  },
+  {
+    "query": "how does Flask create the Jinja environment",
+    "acceptable_ids": [
+      "app.py::Flask.create_jinja_environment:361",
+      "sansio/app.py::App.create_jinja_environment:479",
+      "templating.py::Environment:39"
+    ],
+    "notes": "create_jinja_environment on Flask/App; Environment class"
+  },
+  {
+    "query": "how does Flask handle flash messages",
+    "acceptable_ids": [
+      "helpers.py::flash:299",
+      "helpers.py::get_flashed_messages:333"
+    ],
+    "notes": "flash and get_flashed_messages in helpers"
+  },
+  {
+    "query": "how does Flask handle redirects",
+    "acceptable_ids": [
+      "helpers.py::redirect:230",
+      "sansio/app.py::App.redirect:893"
+    ],
+    "notes": "redirect in helpers and App.redirect"
+  },
+  {
+    "query": "how does Flask handle application context",
+    "acceptable_ids": [
+      "app.py::Flask.app_context:1348",
+      "ctx.py::AppContext:238",
+      "ctx.py::AppContext.push:251"
+    ],
+    "notes": "app_context, AppContext, push"
+  },
+  {
+    "query": "how does Flask dispatch requests",
+    "acceptable_ids": [
+      "app.py::Flask.dispatch_request:842",
+      "app.py::Flask.full_dispatch_request:867",
+      "app.py::Flask.wsgi_app:1441"
+    ],
+    "notes": "dispatch_request, full_dispatch_request, wsgi_app"
+  },
+  {
+    "query": "how does Flask register error handlers",
+    "acceptable_ids": [
+      "sansio/scaffold.py::Scaffold.register_error_handler:641",
+      "sansio/scaffold.py::Scaffold.errorhandler:597",
+      "sansio/blueprints.py::Blueprint.app_errorhandler:595"
+    ],
+    "notes": "register_error_handler, errorhandler decorator, app_errorhandler"
+  },
+  {
+    "query": "how does Flask send static files",
+    "acceptable_ids": [
+      "app.py::Flask.send_static_file:300",
+      "helpers.py::send_file:388",
+      "helpers.py::send_from_directory:514"
+    ],
+    "notes": "send_static_file, send_file, send_from_directory"
+  }
+]
